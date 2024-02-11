@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:theme="@style/Theme.AppCompat">
+
+        <activity
+            android:name="com.example.datastore.DataStoreLauncherActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStorePreferencesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStoreProtobufActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStorePreferencesMigrationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStoreInjectedPreferencesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStoreInjectedProtoPreferencesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStoreJsonPreferencesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.datastore.DataStoreDataStoreMigrationActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>

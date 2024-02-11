@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.datastore.DataStoreLauncherActivity">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:hint="User Name"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:hint="User Email"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to old Shared Prefs"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/load_old_prefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load from old Shared Prefs"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load by Proto Data Store"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/save_datastore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Proto Data Store"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"
+        tools:text="Status" />
+
+</LinearLayout>
