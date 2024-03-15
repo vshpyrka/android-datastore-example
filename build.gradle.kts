@@ -149,4 +149,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-javalite
     androidTestImplementation(libs.protobuf.lite)
     androidTestImplementation(libs.protobuf.kotlin)
+
+    implementation("com.google.guava:guava:32.0.1-jre")
+    implementation("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 }
