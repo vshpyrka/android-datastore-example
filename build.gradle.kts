@@ -10,7 +10,6 @@ plugins {
     alias(pluginLibs.plugins.serialization)
 
     alias(pluginLibs.plugins.hilt)
-
     alias(pluginLibs.plugins.kotlin.kapt)
 }
 
@@ -20,6 +19,7 @@ android {
 
     defaultConfig {
         minSdk = sdk.versions.minSdk.get().toInt()
+        targetSdk = sdk.versions.targetSdk.get().toInt()
 
         testInstrumentationRunner = "com.example.datastore.runner.CustomTestRunner"
     }
