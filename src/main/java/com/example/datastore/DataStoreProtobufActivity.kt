@@ -13,6 +13,7 @@ class DataStoreProtobufActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityDataStoreProtobufBinding.inflate(layoutInflater)
+        binding.root.applyWindowInsets()
         setContentView(binding.root)
 
         val sharedPreferences = getSharedPreferences(KEY_PROTO_SHARD_PREFERENCES_FILE, Context.MODE_PRIVATE)

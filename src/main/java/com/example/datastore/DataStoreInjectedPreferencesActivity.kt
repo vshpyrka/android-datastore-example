@@ -32,6 +32,7 @@ class DataStoreInjectedPreferencesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityDataStoreInjectedPreferencesBinding.inflate(layoutInflater)
+        binding.root.applyWindowInsets()
         setContentView(binding.root)
 
         binding.clear.setOnClickListener {

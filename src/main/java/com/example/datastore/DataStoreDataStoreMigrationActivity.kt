@@ -19,6 +19,7 @@ class DataStoreDataStoreMigrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityDataStoreDataStoreMigrationBinding.inflate(layoutInflater)
+        binding.root.applyWindowInsets()
         setContentView(binding.root)
 
         binding.saveOldData.setOnClickListener {
