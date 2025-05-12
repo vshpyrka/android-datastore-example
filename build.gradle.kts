@@ -108,10 +108,6 @@ protobuf {
     }
 }
 
-configurations.configureEach {
-    resolutionStrategy.force("androidx.datastore:datastore-preferences:1.1.4")
-}
-
 dependencies {
 
     implementation(libs.hilt.android.core)
