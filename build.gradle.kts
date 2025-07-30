@@ -10,7 +10,7 @@ plugins {
     alias(pluginLibs.plugins.serialization)
 
     alias(pluginLibs.plugins.hilt)
-    alias(pluginLibs.plugins.kotlin.kapt)
+    alias(pluginLibs.plugins.ksp)
 }
 
 android {
@@ -111,7 +111,7 @@ protobuf {
 dependencies {
 
     implementation(libs.hilt.android.core)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
@@ -131,7 +131,7 @@ dependencies {
     implementation(libs.kotlin.serialization.json)
 
     androidTestImplementation(testLibs.hilt.android.testing)
-    kaptAndroidTest(testLibs.hilt.compiler)
+    kspAndroidTest(testLibs.hilt.compiler)
 
     androidTestImplementation(testLibs.core.ktx)
     androidTestImplementation(testLibs.espresso)
