@@ -2,7 +2,6 @@ import com.google.protobuf.gradle.id
 
 plugins {
     alias(pluginLibs.plugins.android.library)
-    alias(pluginLibs.plugins.kotlin.android)
 
     // find latest version number here:
     // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-gradle-plugin
